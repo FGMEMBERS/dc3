@@ -4,8 +4,8 @@
 
  <path>dc3-dpm.ac</path>
 
-<panel>
-  <path>Aircraft/dc3/dc3-dpm-3d-panel.xml</path>
+<!--<panel>
+  <path>Aircraft/dc3/Models/dc3-2d-panel.xml</path>
   <bottom-left>
    <x-m>-1.94</x-m>
    <y-m>-0.695</y-m>
@@ -21,10 +21,9 @@
    <y-m>-0.695</y-m>
    <z-m>-0.10</z-m>
   </top-left>
- </panel>
+ </panel>-->
 
-<!-- panel models-->
-
+<!-- start cockpit models-->
  <model>
   <path>Aircraft/dc3/Models/dc3-throttle.xml</path>
   <offsets>
@@ -34,7 +33,149 @@
   </offsets>
  </model>
 
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pilot-seat.xml</path>
+  <offsets>
+   <x-m>-1.32</x-m>
+   <y-m>-0.4</y-m>
+   <z-m>-0.435</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pilot-seat.xml</path>
+  <offsets>
+   <x-m>-1.32</x-m>
+   <y-m>0.4</y-m>
+   <z-m>-0.435</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pedals.xml</path>
+  <offsets>
+   <x-m>-1.995</x-m>
+   <y-m>-0.3699</y-m>
+   <z-m>-0.695</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pedals.xml</path>
+  <offsets>
+   <x-m>-1.995</x-m>
+   <y-m>0.3699</y-m>
+   <z-m>-0.695</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-overhead-panel.xml</path>
+  <offsets>
+   <x-m>-1.81391</x-m>
+   <y-m>-0.000957012</y-m>
+   <z-m>0.229533</z-m>
+  </offsets>
+ </model>
+
+<animation>
+  <type>rotate</type>
+  <object-name>FlapsLever</object-name>
+  <property>/controls/flight/flaps</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>50</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.957</x-m>
+   <y-m>0.152</y-m>
+   <z-m>-0.512</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
  <animation>
+  <type>rotate</type>
+  <object-name>GearLever</object-name>
+  <property>/controls/gear/gear-down</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>30</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.957</x-m>
+   <y-m>0.152</y-m>
+   <z-m>-0.68</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- end cockpit models-->
+
+<!-- start lights-->
+
+<!-- switch navlights on-->
+ <animation>
+  <type>select</type>
+  <object-name>LeftNavLightOn</object-name>
+  <object-name>RightNavLightOn</object-name>
+  <condition>
+    <property>/controls/lighting/nav-lights</property>
+  </condition>
+ </animation>
+
+<!-- switch navlights off-->
+ <animation>
+  <type>select</type>
+  <object-name>LeftNavLightOff</object-name>
+  <object-name>RightNavLightOff</object-name>
+  <condition>
+   <not>
+    <property>/controls/lighting/nav-lights</property>
+   </not>
+  </condition>
+ </animation>
+
+ <animation>
+  <name>BeaconFlasher</name>
+  <type>timed</type>
+  <object-name>BeaconOff</object-name>
+  <object-name>BeaconOn</object-name>
+  <duration-sec>1.0</duration-sec>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>BeaconFlasher</object-name>
+  <condition>
+   <property>/controls/lighting/beacon</property>
+  </condition>
+ </animation>
+
+<!-- end lights-->
+
+
+  <animation>
   <type>select</type>
   <object-name>LeftPropeller.Fast</object-name>
   <condition>
@@ -109,6 +250,7 @@
    <z>0.0</z>
   </axis>
  </animation>
+
 
  <animation>
   <type>rotate</type>
@@ -305,4 +447,58 @@
   </axis>
  </animation>
 
+<!-- Shadow Map -->
+<!-- pitch -->
+ <animation>
+  <type>rotate</type>
+  <object-name>ShadowMap</object-name>
+  <property>/orientation/pitch-deg</property>
+  <factor>-1.0</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- roll -->
+ <animation>
+  <type>rotate</type>
+  <object-name>ShadowMap</object-name>
+  <property>/orientation/roll-deg</property>
+  <factor>1.0</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Translate to ground level -->
+ <animation>
+  <type>translate</type>
+  <object-name>ShadowMap</object-name>
+  <property>/position/altitude-agl-ft</property>
+  <factor>-0.3</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 </PropertyList>

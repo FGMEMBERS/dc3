@@ -7,7 +7,24 @@
   <type>rotate</type>
   <object-name>Throttle</object-name>
   <property>/controls/engines/engine[0]/throttle</property>
-  <interpolation>
+  <factor>55</factor>
+
+  <center>
+   <x-m>0.109</x-m>
+   <y-m>0.8</y-m>
+   <z-m>0.128</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+
+
+<!--  <interpolation>
    <entry>
     <ind>0.0</ind>
     <dep>0</dep>
@@ -16,19 +33,4 @@
     <ind>1.0</ind>
     <dep>100</dep>
    </entry>
-  </interpolation>
-  <center>
-   <x-m>0.109</x-m>
-   <y-m>0.8</y-m>
-   <z-m>0.128</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
-
-</PropertyList>
-
-
+  </interpolation>-->
