@@ -115,4 +115,125 @@
   </axis>
  </animation>
 
+ <animation>
+  <type>rotate</type>
+  <object-name>Rudder</object-name>
+  <property>/controls/rudder</property>
+  <factor>25</factor>
+  <center>
+   <x-m>14.6</x-m>
+   <y-m>0</y-m>
+   <z-m>2</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftElevator</object-name>
+  <object-name>RightElevator</object-name>
+  <property>/controls/elevator</property>
+  <factor>15</factor>
+  <center>
+   <x-m>15.2</x-m>
+   <y-m>0</y-m>
+   <z-m>0.45</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftInnerFlap</object-name>
+  <object-name>RightInnerFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.7</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftOuterFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.7</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>-0.035</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightOuterFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.7</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0.035</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftAileron</object-name>
+  <property>/controls/aileron</property>
+  <factor>30</factor>
+  <center>
+   <x-m>5.1</x-m>
+   <y-m>-10</y-m>
+   <z-m>-1.2</z-m>
+  </center>
+  <axis>
+   <x>-.07</x>
+   <y>1</y>
+   <z>-.04</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightAileron</object-name>
+  <property>/controls/aileron</property>
+  <factor>-30</factor>
+  <center>
+   <x-m>5.1</x-m>
+   <y-m>10</y-m>
+   <z-m>-1.2</z-m>
+  </center>
+  <axis>
+   <x>.07</x>
+   <y>1</y>
+   <z>.04</z>
+  </axis>
+ </animation>
+
 </PropertyList>
