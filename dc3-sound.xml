@@ -49,6 +49,9 @@
        <value>1800</value>
      </less-than>
    </condition>
+   <volume>
+    <offset>0.5</offset>
+   </volume>
   </engine>
 
   <engine>
@@ -64,14 +67,12 @@
    </condition>
    <volume>
     <property>/engines/engine[0]/rpm</property>
-    <type>sqrt</type>
-    <factor>0.0222</factor>
-    <offset>-0.2</offset>
+    <factor>0.00037</factor>
     <max>1.0</max>
    </volume>
    <pitch>
     <property>/engines/engine[0]/rpm</property>
-    <factor>0.00025</factor>
+    <factor>0.00037</factor>
     <min>0</min>
     <max>0.8</max>
    </pitch>
@@ -123,6 +124,9 @@
        <value>1800</value>
      </less-than>
    </condition>
+   <volume>
+    <offset>0.5</offset>
+   </volume>
   </engine>
 
   <engine>
@@ -138,18 +142,17 @@
    </condition>
    <volume>
     <property>/engines/engine[1]/rpm</property>
-    <type>sqrt</type>
-    <factor>0.0222</factor>
-    <offset>-0.2</offset>
+    <factor>0.00037</factor>
     <max>1.0</max>
    </volume>
    <pitch>
     <property>/engines/engine[1]/rpm</property>
-    <factor>0.00025</factor>
+    <factor>0.00037</factor>
     <min>0</min>
     <max>0.8</max>
    </pitch>
   </engine>
+
   <rumble>
    <name>rumble</name>
    <mode>looped</mode>
