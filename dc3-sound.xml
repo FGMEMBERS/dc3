@@ -42,45 +42,38 @@
    <name>engine1_idle</name>
    <mode>looped</mode>
    <path>Aircraft/dc3/Sounds/engine_idle.wav</path>
-   <property>/engines/engine[0]/running</property>
-   <volume>
-    <property>/engines/engine[0]/rpm</property>
-    <type>sqrt</type>
-    <offset>0.6</offset>
-    <factor>-0.013</factor>
-   </volume>
-   <pitch>
-    <property>/engines/engine[0]/rpm</property>
-    <type>log</type>
-    <offset>0.73</offset>
-    <factor>0.345</factor>
-   </pitch>
+   <condition>
+     <property>/engines/engine[0]/running</property>
+     <less-than>
+       <property>/engines/engine[0]/rpm</property>
+       <value>1800</value>
+     </less-than>
+   </condition>
   </engine>
 
   <engine>
    <name>engine1_running</name>
    <mode>looped</mode>
    <path>Aircraft/dc3/Sounds/engine_running.wav</path>
-   <property>/engines/engine[0]/running</property>
+   <condition>
+     <property>/engines/engine[0]/running</property>
+     <greater-than>
+       <property>/engines/engine[0]/rpm</property>
+       <value>1200</value>
+     </greater-than>
+   </condition>
    <volume>
     <property>/engines/engine[0]/rpm</property>
     <type>sqrt</type>
-    <factor>0.04</factor>
-    <offset>0</offset>
+    <factor>0.0222</factor>
+    <offset>-0.2</offset>
     <max>1.0</max>
-   </volume>
-   <volume>
-    <property>/engines/engine[0]/mp-osi</property>
-    <factor>0.005</factor>
-    <min>0.15</min>
-    <max>0.5</max>
-    <offset>0.15</offset>
    </volume>
    <pitch>
     <property>/engines/engine[0]/rpm</property>
-    <type>log</type>
-    <offset>0.73</offset>
-    <factor>0.345</factor>
+    <factor>0.00025</factor>
+    <min>0</min>
+    <max>0.8</max>
    </pitch>
   </engine>
 
@@ -123,48 +116,40 @@
    <name>engine2_idle</name>
    <mode>looped</mode>
    <path>Aircraft/dc3/Sounds/engine_idle.wav</path>
-   <property>/engines/engine[1]/running</property>
-   <volume>
-    <property>/engines/engine[1]/rpm</property>
-    <type>sqrt</type>
-    <offset>0.6</offset>
-    <factor>-0.013</factor>
-   </volume>
-   <pitch>
-    <property>/engines/engine[0]/rpm</property>
-    <type>log</type>
-    <offset>0.73</offset>
-    <factor>0.345</factor>
-   </pitch>
+   <condition>
+     <property>/engines/engine[1]/running</property>
+     <less-than>
+       <property>/engines/engine[1]/rpm</property>
+       <value>1800</value>
+     </less-than>
+   </condition>
   </engine>
 
   <engine>
    <name>engine2_running</name>
    <mode>looped</mode>
    <path>Aircraft/dc3/Sounds/engine_running.wav</path>
-   <property>/engines/engine[1]/running</property>
+   <condition>
+     <property>/engines/engine[1]/running</property>
+     <greater-than>
+       <property>/engines/engine[1]/rpm</property>
+       <value>1200</value>
+     </greater-than>
+   </condition>
    <volume>
     <property>/engines/engine[1]/rpm</property>
     <type>sqrt</type>
-    <factor>0.04</factor>
-    <offset>0</offset>
+    <factor>0.0222</factor>
+    <offset>-0.2</offset>
     <max>1.0</max>
    </volume>
-   <volume>
-    <property>/engines/engine[1]/mp-osi</property>
-    <factor>0.005</factor>
-    <min>0.15</min>
-    <max>0.5</max>
-    <offset>0.15</offset>
-   </volume>
    <pitch>
-    <property>/engines/engine[0]/rpm</property>
-    <type>log</type>
-    <offset>0.73</offset>
-    <factor>0.345</factor>
+    <property>/engines/engine[1]/rpm</property>
+    <factor>0.00025</factor>
+    <min>0</min>
+    <max>0.8</max>
    </pitch>
   </engine>
-
   <rumble>
    <name>rumble</name>
    <mode>looped</mode>
@@ -256,7 +241,7 @@
     <factor>-0.000015</factor>
     <offset>1.0</offset>
     <min>0.1</min>
-    <max>1.0</max>
+    <max>0.5</max>
    </volume>
    <volume>
      <property>/velocities/airspeed-kt</property>
@@ -270,7 +255,7 @@
     <offset>1.25</offset>
    </pitch>
   </wind>
- 
+
   <stall>
    <name>stall</name>
    <path>Aircraft/dc3/Sounds/stall_horn.wav</path>
