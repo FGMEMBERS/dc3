@@ -99,7 +99,8 @@
   <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING"/>
 </gear>
 
-<gear x="-6.08" y="2.52" z="-3.49" compression="1" retract-time="7" spring="2">
+<gear x="-6.08" y="2.52" z="-3.49" compression="0.3" retract-time="7" 
+    spring="1" damp="10">
   <control-input axis="/controls/gear/parking-brake" control="BRAKE"/>
   <control-input axis="/controls/gear/wheel[0]/brake" control="BRAKE"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -107,7 +108,8 @@
   <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 </gear>
 
-<gear x="-6.08" y="-2.52" z="-3.49" compression="1" retract-time="7" spring="2">
+<gear x="-6.08" y="-2.52" z="-3.49" compression="0.3" retract-time="7"
+    spring="1" damp="10">
   <control-input axis="/controls/gear/parking-brake" control="BRAKE"/>
   <control-input axis="/controls/gear/wheel[1]/brake" control="BRAKE"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
