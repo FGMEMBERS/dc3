@@ -32,7 +32,7 @@ October 23 2001 John Check, fgpanels@rockfish.net
 
   <panel>
    <path>Aircraft/c310/c310-vfr-panel.xml</path>
-   <visibility>true</visibility>
+   <visibility>false</visibility>
   </panel>
   <panel_2>
    <path>Aircraft/c310/c310-mini-panel.xml</path>
@@ -42,6 +42,19 @@ October 23 2001 John Check, fgpanels@rockfish.net
    <path>Aircraft/dc3/Models/dc3-dpm.xml</path>
   </model> 
 
+<virtual-cockpit archive="y">false</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+<view>
+   <internal archive="y">true</internal>
+   <config>
+     <!-- x/y/z == right/up/back -->
+     <x-offset-m archive="y">-0.38</x-offset-m>
+     <y-offset-m archive="y">0.08</y-offset-m>
+     <z-offset-m archive="y">-1.30</z-offset-m>
+      <pitch-offset-deg>-12</pitch-offset-deg>
+   </config>
+  </view>
   <view n="0">
    <config>
     <pitch-offset-deg>-6</pitch-offset-deg>

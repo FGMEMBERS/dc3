@@ -4,14 +4,66 @@
 
  <path>dc3-dpm.ac</path>
 
+<panel>
+  <path>Aircraft/dc3/dc3-dpm-3d-panel.xml</path>
+  <bottom-left>
+   <x-m>-1.94</x-m>
+   <y-m>-0.695</y-m>
+   <z-m>-0.60</z-m>
+  </bottom-left>
+  <bottom-right>
+   <x-m>-1.94</x-m>
+   <y-m> 0.1</y-m>
+   <z-m>-0.60</z-m>
+  </bottom-right>
+  <top-left>
+   <x-m>-1.94</x-m>
+   <y-m>-0.695</y-m>
+   <z-m>-0.10</z-m>
+  </top-left>
+ </panel>
+
+<!-- panel models-->
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-throttle.xml</path>
+  <offsets>
+   <x-m>-1.75</x-m>
+   <y-m>0.00</y-m>
+   <z-m>-0.578</z-m>
+  </offsets>
+ </model>
+
  <animation>
+  <type>select</type>
+  <object-name>LeftPropeller.Fast</object-name>
+  <condition>
+   <greater-than>
+    <property>/engines/engine[0]/rpm</property>
+    <value>1000</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>LeftPropeller</object-name>
+  <condition>
+   <less-than>
+    <property>/engines/engine[0]/rpm</property>
+    <value>1000</value>
+   </less-than>
+  </condition>
+ </animation>
+
+<animation>
   <type>spin</type>
   <object-name>LeftPropeller</object-name>
   <property>/engines/engine[0]/rpm</property>
   <center>
    <x-m>0</x-m>
    <y-m>-2.9</y-m>
-   <z-m>-1.55</z-m>
+   <z-m>-1.50</z-m>
   </center>
   <axis>
    <x>1.0</x>
