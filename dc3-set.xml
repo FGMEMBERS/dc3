@@ -14,6 +14,7 @@ October 23 2001 John Check, fgpanels@rockfish.net
  <sim>
 
   <description>Douglas DC-3</description>
+  <author>David Megginson</author>
 
   <flight-model>yasim</flight-model>
   <aero>dc3</aero>
