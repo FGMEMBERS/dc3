@@ -3,6 +3,60 @@
 
  <path>dc3-cockpit.ac</path>
 
+ <model>
+  <path>Aircraft/Instruments-3d/asi/asi.xml</path>
+  <offsets>
+   <x-m>-0.4</x-m>
+   <y-m>-0.4</y-m>
+   <z-m>-0.12</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <offsets>
+   <x-m>-0.40</x-m>
+   <y-m>-0.30</y-m>
+   <z-m>-0.10</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/alt/alt.xml</path>
+  <offsets>
+   <x-m>-0.40</x-m>
+   <y-m>-0.20</y-m>
+   <z-m>-0.12</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+  <offsets>
+   <x-m>-0.4</x-m>
+   <y-m>-0.4</y-m>
+   <z-m>-0.22</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/hi/hi.xml</path>
+  <offsets>
+   <x-m>-0.40</x-m>
+   <y-m>-0.30</y-m>
+   <z-m>-0.20</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/vsi/vsi.xml</path>
+  <offsets>
+   <x-m>-0.40</x-m>
+   <y-m>-0.20</y-m>
+   <z-m>-0.22</z-m>
+  </offsets>
+ </model>
+
  <animation>
   <type>rotate</type>
   <object-name>IgnitionHandle.1</object-name>
