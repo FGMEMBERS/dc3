@@ -1,9 +1,49 @@
 <?xml version="1.0"?>
 
 <PropertyList>
+
  <path>dc3-dpm.ac</path>
+
  <offsets>
   <heading-deg>270</heading-deg>
   <z-m>-1.75</z-m>
  </offsets>
+
+ <!--
+   Note that the x and y axes are switched in the following, because
+   of the different model orientation.
+ -->
+
+ <animation>
+  <type>spin</type>
+  <object-name>LeftPropeller</object-name>
+  <property>/engines/engine[0]/rpm</property>
+  <center>
+   <x-m>2.9</x-m>
+   <y-m>0</y-m>
+   <z-m>.3</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>RightPropeller</object-name>
+  <property>/engines/engine[1]/rpm</property>
+  <center>
+   <x-m>-2.9</x-m>
+   <y-m>0</y-m>
+   <z-m>.3</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
 </PropertyList>
