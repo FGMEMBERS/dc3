@@ -5,10 +5,117 @@
 
 <animation>
   <type>rotate</type>
-  <object-name>Throttle</object-name>
-  <property>/controls/engines/engine[0]/throttle</property>
-  <factor>55</factor>
+  <object-name>Prop.1</object-name>
+  <object-name>Prop.1-Sphere</object-name>
+  <property>/controls/engines/engine[0]/propeller-pitch</property>
+  <factor>125</factor>
+  <center>
+   <x-m>0.108843</x-m>
+   <y-m>0.094561</y-m>
+   <z-m>0.128874</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
 
+<animation>
+  <type>rotate</type>
+  <object-name>Prop.2</object-name>
+  <object-name>Prop.2-Sphere</object-name>
+  <property>/controls/engines/engine[1]/propeller-pitch</property>
+  <factor>125</factor>
+  <center>
+   <x-m>0.108843</x-m>
+   <y-m>0.094561</y-m>
+   <z-m>0.128874</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>Throttle.1</object-name>
+  <object-name>Throttle.1-Sphere</object-name>
+  <property>/controls/engines/engine[0]/throttle</property>
+  <factor>90</factor>
+  <center>
+   <x-m>0.108843</x-m>
+   <y-m>0.094561</y-m>
+   <z-m>0.128874</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>Throttle.2</object-name>
+  <object-name>Throttle.2-Sphere</object-name>
+  <property>/controls/engines/engine[1]/throttle</property>
+  <factor>90</factor>
+  <center>
+   <x-m>0.108843</x-m>
+   <y-m>0.094561</y-m>
+   <z-m>0.128874</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>Mixture.1</object-name>
+  <object-name>Mixture.1-Sphere</object-name>
+  <property>/controls/engines/engine[0]/mixture</property>
+  <factor>90</factor>
+  <center>
+   <x-m>0.108843</x-m>
+   <y-m>0.094561</y-m>
+   <z-m>0.128874</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>Mixture.2</object-name>
+  <object-name>Mixture.2-Sphere</object-name>
+  <property>/controls/engines/engine[1]/mixture</property>
+  <factor>90</factor>
+  <center>
+   <x-m>0.108843</x-m>
+   <y-m>0.094561</y-m>
+   <z-m>0.128874</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>TrimElevation</object-name>
+  <property>/controls/flight/elevator-trim</property>
+  <factor>255</factor>
   <center>
    <x-m>0.109</x-m>
    <y-m>0.8</y-m>
@@ -21,16 +128,82 @@
   </axis>
  </animation>
 
-</PropertyList>
 
+<animation>
+  <type>rotate</type>
+  <object-name>TrimLeverRudder</object-name>
+  <property>/controls/flight/elevator-trim</property>
+  <factor>1000</factor>
+  <center>
+   <x-m>0.002737</x-m>
+   <y-m>-0.093053</y-m>
+   <z-m>-0.070473</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0.15</z>
+  </axis>
+ </animation>
 
-<!--  <interpolation>
+<animation>
+  <type>rotate</type>
+  <object-name>TrimLeverAileron</object-name>
+  <property>/controls/flight/elevator-trim</property>
+  <factor>1000</factor>
+  <center>
+   <x-m>0.002737</x-m>
+   <y-m>0.093053</y-m>
+   <z-m>-0.070473</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0.15</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>ParkingBrake</object-name>
+  <property>/controls/gear/brake-parking[0]</property>
+  <factor>0.025</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>TrimRudderNeedle</object-name>
+  <property>/controls/flight/elevator-trim</property>
+  <interpolation>
    <entry>
-    <ind>0.0</ind>
+    <ind>-1.0</ind>
+    <dep>-45</dep>
+   </entry>
+   <entry>
+    <ind>0</ind>
     <dep>0</dep>
    </entry>
    <entry>
     <ind>1.0</ind>
-    <dep>100</dep>
+    <dep>450</dep>
    </entry>
-  </interpolation>-->
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>-0.074325</y-m>
+   <z-m>-0.113021</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0.15</z>
+  </axis>
+ </animation>
+
+
+</PropertyList>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>dc3-cockpit.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>IgnitionHandle.1</object-name>
+  <property>/controls/engines/engine[0]/magnetos</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>80</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>55</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>25</dep>
+   </entry>
+   <entry>
+    <ind>3</ind>
+    <dep>0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.566364</x-m>
+   <y-m>-0.026085</y-m>
+   <z-m>0.292386</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0.3</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>GearLever</object-name>
+  <property>/gear/gear[0]/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>30</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.461231</x-m>
+   <y-m>0.152494</y-m>
+   <z-m>-0.579749</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>FlapsLever</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>50</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.460043</x-m>
+   <y-m>0.152494</y-m>
+   <z-m>-0.415003</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

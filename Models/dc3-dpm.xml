@@ -3,8 +3,8 @@
 <PropertyList>
 
  <path>dc3-dpm.ac</path>
-
-<!--<panel>
+<!--
+<panel>
   <path>Aircraft/dc3/Models/dc3-2d-panel.xml</path>
   <bottom-left>
    <x-m>-1.94</x-m>
@@ -24,10 +24,20 @@
  </panel>-->
 
 <!-- start cockpit models-->
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-cockpit.xml</path>
+  <offsets>
+   <x-m>-1.41703</x-m>
+   <y-m>-0.001</y-m>
+   <z-m>-0.0947042</z-m>
+  </offsets>
+ </model>
+
  <model>
   <path>Aircraft/dc3/Models/dc3-throttle.xml</path>
   <offsets>
-   <x-m>-1.75</x-m>
+   <x-m>-1.76</x-m>
    <y-m>0.00</y-m>
    <z-m>-0.578</z-m>
   </offsets>
@@ -69,66 +79,8 @@
   </offsets>
  </model>
 
- <model>
-  <path>Aircraft/dc3/Models/dc3-overhead-panel.xml</path>
-  <offsets>
-   <x-m>-1.81391</x-m>
-   <y-m>-0.000957012</y-m>
-   <z-m>0.229533</z-m>
-  </offsets>
- </model>
 
-<animation>
-  <type>rotate</type>
-  <object-name>FlapsLever</object-name>
-  <property>/controls/flight/flaps</property>
-  <interpolation>
-   <entry>
-    <ind>0.0</ind>
-    <dep>0</dep>
-   </entry>
-   <entry>
-    <ind>1.0</ind>
-    <dep>50</dep>
-   </entry>
-  </interpolation>
-  <center>
-   <x-m>-0.957</x-m>
-   <y-m>0.152</y-m>
-   <z-m>-0.512</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
- 
- <animation>
-  <type>rotate</type>
-  <object-name>GearLever</object-name>
-  <property>/controls/gear/gear-down</property>
-  <interpolation>
-   <entry>
-    <ind>0.0</ind>
-    <dep>0</dep>
-   </entry>
-   <entry>
-    <ind>1.0</ind>
-    <dep>30</dep>
-   </entry>
-  </interpolation>
-  <center>
-   <x-m>-0.957</x-m>
-   <y-m>0.152</y-m>
-   <z-m>-0.68</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>-1</y>
-   <z>0</z>
-  </axis>
- </animation>
+
 
 <!-- end cockpit models-->
 
@@ -166,7 +118,7 @@
 
  <animation>
   <type>select</type>
-  <object-name>BeaconFlasher</object-name>
+  <object-name>BeaconOn</object-name>
   <condition>
    <property>/controls/lighting/beacon</property>
   </condition>
