@@ -4,11 +4,6 @@
 
  <path>dc3-dpm.ac</path>
 
- <!--
-   Note that the x and y axes are switched in the following, because
-   of the different model orientation.
- -->
-
  <animation>
   <type>spin</type>
   <object-name>LeftPropeller</object-name>
@@ -45,7 +40,7 @@
   <type>rotate</type>
   <object-name>LeftWheel</object-name>
   <object-name>LeftStrut</object-name>
-  <property>/controls/gear-down</property>
+  <property>/gear/gear[0]/position-norm</property>
   <offset>-1</offset>
   <factor>-35</factor>
   <center>
@@ -63,7 +58,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftStrut</object-name>
-  <property>/controls/gear-down</property>
+  <property>/gear/gear[0]/position-norm</property>
   <offset>-1</offset>
   <factor>-35</factor>
   <center>
@@ -82,7 +77,7 @@
   <type>rotate</type>
   <object-name>RightWheel</object-name>
   <object-name>RightStrut</object-name>
-  <property>/controls/gear-down</property>
+  <property>/gear/gear[1]/position-norm</property>
   <offset>-1</offset>
   <factor>-35</factor>
   <center>
@@ -100,7 +95,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightStrut</object-name>
-  <property>/controls/gear-down</property>
+  <property>/gear/gear[1]/position-norm</property>
   <offset>-1</offset>
   <factor>-35</factor>
   <center>
@@ -136,7 +131,7 @@
   <type>rotate</type>
   <object-name>LeftElevator</object-name>
   <object-name>RightElevator</object-name>
-  <property>/controls/elevator</property>
+  <property>/surface-positions/elevator-pos-norm</property>
   <factor>15</factor>
   <center>
    <x-m>15.2</x-m>
@@ -154,7 +149,7 @@
   <type>rotate</type>
   <object-name>LeftInnerFlap</object-name>
   <object-name>RightInnerFlap</object-name>
-  <property>/controls/flaps</property>
+  <property>/surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>4.85</x-m>
@@ -171,7 +166,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftOuterFlap</object-name>
-  <property>/controls/flaps</property>
+  <property>/surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>4.85</x-m>
@@ -188,7 +183,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightOuterFlap</object-name>
-  <property>/controls/flaps</property>
+  <property>/surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>4.85</x-m>
@@ -205,7 +200,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
-  <property>/controls/aileron</property>
+  <property>/surface-positions/left-aileron-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>5.1</x-m>
@@ -213,16 +208,16 @@
    <z-m>-1.2</z-m>
   </center>
   <axis>
-   <x>-.07</x>
-   <y>1</y>
-   <z>-.04</z>
+   <x>.07</x>
+   <y>-1</y>
+   <z>.04</z>
   </axis>
  </animation>
 
  <animation>
   <type>rotate</type>
   <object-name>RightAileron</object-name>
-  <property>/controls/aileron</property>
+  <property>/surface-positions/right-aileron-pos-norm</property>
   <factor>-30</factor>
   <center>
    <x-m>5.1</x-m>
