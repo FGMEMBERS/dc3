@@ -201,16 +201,16 @@
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
   <property>/surface-positions/left-aileron-pos-norm</property>
-  <factor>30</factor>
+  <factor>-30</factor>
   <center>
-   <x-m>5.1</x-m>
+   <x-m>5.2</x-m>
    <y-m>-10</y-m>
-   <z-m>-1.2</z-m>
+   <z-m>-1.25</z-m>
   </center>
   <axis>
-   <x>.07</x>
-   <y>-1</y>
-   <z>.04</z>
+   <x>0.06</x>
+   <y>-1.0</y>
+   <z>0.06</z>
   </axis>
  </animation>
 
@@ -218,16 +218,16 @@
   <type>rotate</type>
   <object-name>RightAileron</object-name>
   <property>/surface-positions/right-aileron-pos-norm</property>
-  <factor>-30</factor>
+  <factor>30</factor>
   <center>
    <x-m>5.1</x-m>
    <y-m>10</y-m>
    <z-m>-1.2</z-m>
   </center>
   <axis>
-   <x>.07</x>
-   <y>1</y>
-   <z>.04</z>
+   <x>0.06</x>
+   <y>1.0</y>
+   <z>0.06</z>
   </axis>
  </animation>
 
