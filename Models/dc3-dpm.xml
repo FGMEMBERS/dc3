@@ -113,7 +113,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Rudder</object-name>
-  <property>/controls/rudder</property>
+  <property>/controls/flight/rudder</property>
   <factor>25</factor>
   <center>
    <x-m>14.6</x-m>
