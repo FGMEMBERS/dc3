@@ -4,11 +4,6 @@
 
  <path>dc3-dpm.ac</path>
 
- <offsets>
-  <heading-deg>270</heading-deg>
-  <z-m>-1.75</z-m>
- </offsets>
-
  <!--
    Note that the x and y axes are switched in the following, because
    of the different model orientation.
@@ -19,13 +14,13 @@
   <object-name>LeftPropeller</object-name>
   <property>/engines/engine[0]/rpm</property>
   <center>
-   <x-m>2.9</x-m>
-   <y-m>0</y-m>
-   <z-m>.3</z-m>
+   <x-m>0</x-m>
+   <y-m>-2.9</y-m>
+   <z-m>-1.55</z-m>
   </center>
   <axis>
-   <x>0.0</x>
-   <y>1.0</y>
+   <x>1.0</x>
+   <y>0.0</y>
    <z>0.0</z>
   </axis>
  </animation>
@@ -35,14 +30,88 @@
   <object-name>RightPropeller</object-name>
   <property>/engines/engine[1]/rpm</property>
   <center>
-   <x-m>-2.9</x-m>
-   <y-m>0</y-m>
-   <z-m>.3</z-m>
+   <x-m>0</x-m>
+   <y-m>2.9</y-m>
+   <z-m>-1.55</z-m>
   </center>
   <axis>
-   <x>0.0</x>
-   <y>1.0</y>
+   <x>1.0</x>
+   <y>0.0</y>
    <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftWheel</object-name>
+  <object-name>LeftStrut</object-name>
+  <property>/controls/gear-down</property>
+  <offset>-1</offset>
+  <factor>-35</factor>
+  <center>
+   <x-m>3.8</x-m>
+   <y-m>-2.9</y-m>
+   <z-m>-1.8</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftStrut</object-name>
+  <property>/controls/gear-down</property>
+  <offset>-1</offset>
+  <factor>-35</factor>
+  <center>
+   <x-m>2.05</x-m>
+   <y-m>-2.9</y-m>
+   <z-m>-3.25</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightWheel</object-name>
+  <object-name>RightStrut</object-name>
+  <property>/controls/gear-down</property>
+  <offset>-1</offset>
+  <factor>-35</factor>
+  <center>
+   <x-m>3.8</x-m>
+   <y-m>2.9</y-m>
+   <z-m>-1.8</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightStrut</object-name>
+  <property>/controls/gear-down</property>
+  <offset>-1</offset>
+  <factor>-35</factor>
+  <center>
+   <x-m>2.05</x-m>
+   <y-m>2.9</y-m>
+   <z-m>-3.25</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
   </axis>
  </animation>
 
