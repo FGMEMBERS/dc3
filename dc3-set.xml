@@ -57,6 +57,10 @@ October 23 2001 John Check, fgpanels@rockfish.net
   </view>
 
   <chase-distance-m type="double" archive="y">-45.0</chase-distance-m>
+
+  <help>
+   <title>Douglas DC-3</title>
+  </help>
  </sim>
 
  <controls>
