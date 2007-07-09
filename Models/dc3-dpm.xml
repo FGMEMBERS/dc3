@@ -132,7 +132,7 @@
   <object-name>LeftPropeller.Fast</object-name>
   <condition>
    <greater-than>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <value>500</value>
    </greater-than>
   </condition>
@@ -143,7 +143,7 @@
   <object-name>LeftPropeller</object-name>
   <condition>
    <less-than>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <value>500</value>
    </less-than>
   </condition>
@@ -152,7 +152,7 @@
  <animation>
   <type>spin</type>
   <object-name>LeftPropeller</object-name>
-  <property>/engines/engine[0]/rpm</property>
+  <property>engines/engine[0]/rpm</property>
   <center>
    <x-m>0</x-m>
    <y-m>-2.9</y-m>
@@ -170,7 +170,7 @@
   <object-name>RightPropeller.Fast</object-name>
   <condition>
    <greater-than>
-    <property>/engines/engine[1]/rpm</property>
+    <property>engines/engine[1]/rpm</property>
     <value>500</value>
    </greater-than>
   </condition>
@@ -181,7 +181,7 @@
   <object-name>RightPropeller</object-name>
   <condition>
    <less-than>
-    <property>/engines/engine[1]/rpm</property>
+    <property>engines/engine[1]/rpm</property>
     <value>500</value>
    </less-than>
   </condition>
@@ -190,7 +190,7 @@
  <animation>
   <type>spin</type>
   <object-name>RightPropeller</object-name>
-  <property>/engines/engine[1]/rpm</property>
+  <property>engines/engine[1]/rpm</property>
   <center>
    <x-m>0</x-m>
    <y-m>2.9</y-m>
@@ -208,7 +208,7 @@
   <type>rotate</type>
   <object-name>LeftWheel</object-name>
   <object-name>LeftStrut</object-name>
-  <property>/gear/gear[0]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <offset-deg>35</offset-deg>
   <factor>-35</factor>
   <center>
@@ -226,7 +226,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftStrut</object-name>
-  <property>/gear/gear[0]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <offset-deg>35</offset-deg>
   <factor>-35</factor>
   <center>
@@ -245,7 +245,7 @@
   <type>rotate</type>
   <object-name>RightWheel</object-name>
   <object-name>RightStrut</object-name>
-  <property>/gear/gear[1]/position-norm</property>
+  <property>gear/gear[1]/position-norm</property>
   <offset-deg>35</offset-deg>
   <factor>-35</factor>
   <center>
@@ -263,7 +263,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightStrut</object-name>
-  <property>/gear/gear[1]/position-norm</property>
+  <property>gear/gear[1]/position-norm</property>
   <offset-deg>35</offset-deg>
   <factor>-35</factor>
   <center>
@@ -281,7 +281,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Rudder</object-name>
-  <property>/controls/flight/rudder</property>
+  <property>controls/flight/rudder</property>
   <factor>25</factor>
   <center>
    <x-m>14.6</x-m>
@@ -299,7 +299,7 @@
   <type>rotate</type>
   <object-name>LeftElevator</object-name>
   <object-name>RightElevator</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
+  <property>surface-positions/elevator-pos-norm</property>
   <factor>15</factor>
   <center>
    <x-m>15.2</x-m>
@@ -317,7 +317,7 @@
   <type>rotate</type>
   <object-name>LeftInnerFlap</object-name>
   <object-name>RightInnerFlap</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>4.85</x-m>
@@ -334,7 +334,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftOuterFlap</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>4.85</x-m>
@@ -351,7 +351,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightOuterFlap</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>4.85</x-m>
@@ -368,7 +368,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
-  <property>/surface-positions/left-aileron-pos-norm</property>
+  <property>surface-positions/left-aileron-pos-norm</property>
   <factor>-30</factor>
   <center>
    <x-m>5.2</x-m>
@@ -385,7 +385,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightAileron</object-name>
-  <property>/surface-positions/right-aileron-pos-norm</property>
+  <property>surface-positions/right-aileron-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>5.1</x-m>
@@ -404,7 +404,7 @@
  <animation>
   <type>rotate</type>
   <object-name>ShadowMap</object-name>
-  <property>/orientation/pitch-deg</property>
+  <property>orientation/pitch-deg</property>
   <factor>-1.0</factor>
   <center>
    <x-m>0</x-m>
@@ -422,7 +422,7 @@
  <animation>
   <type>rotate</type>
   <object-name>ShadowMap</object-name>
-  <property>/orientation/roll-deg</property>
+  <property>orientation/roll-deg</property>
   <factor>1.0</factor>
   <center>
    <x-m>0</x-m>
@@ -440,7 +440,7 @@
  <animation>
   <type>translate</type>
   <object-name>ShadowMap</object-name>
-  <property>/position/altitude-agl-ft</property>
+  <property>position/altitude-agl-ft</property>
   <factor>-0.3</factor>
   <center>
    <x-m>0</x-m>
