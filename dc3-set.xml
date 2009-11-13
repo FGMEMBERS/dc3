@@ -21,8 +21,13 @@ October 23 2001 John Check, fgpanels@rockfish.net
   <fuel-fraction>1.0</fuel-fraction>
 
   <sound>
-   <path>Aircraft/dc3/dc3-sound.xml</path>
+   <path>Aircraft/dc3/Sounds/dc3-sound.xml</path>
   </sound>
+  
+<!-- Definies para splash screen -->
+	<startup>
+		<splash-texture>Aircraft/dc3/splash.png</splash-texture>
+	</startup>
 
   <panel>
    <path>Aircraft/c310/c310-vfr-panel.xml</path>
@@ -32,8 +37,21 @@ October 23 2001 John Check, fgpanels@rockfish.net
    <path>Aircraft/c310/c310-mini-panel.xml</path>
   </panel_2>
 
+<!-- modificações para funcionamento dos liveries - http://wiki.flightgear.org/index.php/Livery_over_MP -->
   <model>
    <path>Aircraft/dc3/Models/dc3-dpm.xml</path>
+		<livery>
+            <name type="string">Trans Canada</name>
+            <texture>dc3-01.rgb</texture>
+		</livery>   
+        <propeller>
+            <name type="string">Trans Canada</name>
+            <texture>dc3-03.rgb</texture>
+        </propeller>      
+        <wings>
+            <name type="string">Trans Canada</name>
+            <texture>dc3-02.rgb</texture>
+        </wings> 	
   </model> 
 
   <virtual-cockpit archive="y">false</virtual-cockpit>
@@ -55,6 +73,38 @@ October 23 2001 John Check, fgpanels@rockfish.net
   <help>
    <title>Douglas DC-3</title>
   </help>
+  
+<!-- O menu de ajuda dessa aeronave -->
+		<help>
+			<title>Douglas DC-3</title>
+			<line>Choose your favorit texture using the key above</line>
+			<key>
+				<name>l</name>
+				<desc>Brings up the Livery Switching Dialog</desc>
+			</key>
+			<key>
+				<name>Ctrl+B</name>
+				<desc>Toggle SpeedBrake</desc>
+			</key>
+		</help>  
+		
+<!-- Entradas para o menu de apoio para controle da aeronave -->
+		<menubar>
+			<default>
+				<menu n="100">
+					<label>DC-3</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.open()</script>
+						</binding>
+					</item>		
+				</menu>
+			</default>
+		</menubar>
+		  
  </sim>
 
  <controls>
@@ -89,5 +139,12 @@ October 23 2001 John Check, fgpanels@rockfish.net
      <zero-pitch-trim-full-throttle type="float">0.001</zero-pitch-trim-full-throttle>
    </config>
  </autopilot>
+ 
+	<!-- Códigos NASAL -->
+	<nasal>
+	    <livery>
+	        <file>Aircraft/dc3/Nasal/livery.nas</file>
+	    </livery>
+	</nasal> 
 
 </PropertyList>
