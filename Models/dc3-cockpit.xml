@@ -4,62 +4,238 @@
  <path>dc3-cockpit.ac</path>
 
  <model>
-  <path>Aircraft/Instruments-3d/asi/asi.xml</path>
+  <path>Aircraft/dc3/Models/Instruments3d/asi/asi.xml</path>
   <offsets>
-   <x-m>-0.4</x-m>
-   <y-m>-0.4</y-m>
+   <x-m>-0.53</x-m>
+   <y-m>-0.45</y-m>
    <z-m>-0.12</z-m>
   </offsets>
  </model>
 
  <model>
-  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <path>Aircraft/dc3/Models/Instruments3d/ai/ai.xml</path>
   <offsets>
-   <x-m>-0.40</x-m>
-   <y-m>-0.30</y-m>
+   <x-m>-0.53</x-m>
+   <y-m>-0.35</y-m>
    <z-m>-0.10</z-m>
   </offsets>
  </model>
 
  <model>
-  <path>Aircraft/Instruments-3d/alt/alt.xml</path>
+  <path>Aircraft/dc3/Models/Instruments3d/alt/alt.xml</path>
   <offsets>
-   <x-m>-0.40</x-m>
-   <y-m>-0.20</y-m>
+   <x-m>-0.53</x-m>
+   <y-m>-0.25</y-m>
    <z-m>-0.12</z-m>
   </offsets>
  </model>
 
  <model>
-  <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+  <path>Aircraft/dc3/Models/Instruments3d/turn/turn-gauge.xml</path>
   <offsets>
-   <x-m>-0.4</x-m>
-   <y-m>-0.4</y-m>
+   <x-m>-0.53</x-m>
+   <y-m>-0.45</y-m>
    <z-m>-0.22</z-m>
   </offsets>
  </model>
-
+ 
  <model>
-  <path>Aircraft/Instruments-3d/hi/hi.xml</path>
+  <path>Aircraft/Instruments-3d/ki206/ki206.xml</path>
   <offsets>
-   <x-m>-0.40</x-m>
-   <y-m>-0.30</y-m>
+   <x-m>-0.53</x-m>
+   <y-m>-0.35</y-m>
    <z-m>-0.20</z-m>
   </offsets>
  </model>
 
  <model>
-  <path>Aircraft/Instruments-3d/vsi/vsi.xml</path>
+  <path>Aircraft/dc3/Models/Instruments3d/clock/clock.xml</path>
   <offsets>
-   <x-m>-0.40</x-m>
-   <y-m>-0.20</y-m>
+   <x-m>-0.53</x-m>
+   <y-m>-0.35</y-m>
+   <z-m>-0.29</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/vsi/vsi-3d.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>-0.25</y-m>
+   <z-m>-0.22</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/ky196/ky196-comm1.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>-0.10</y-m>
+   <z-m>-0.10</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Instruments-3d/ky196/ky196-comm2.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.10</y-m>
+   <z-m>-0.10</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/kns80/kns80.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>-0.10</y-m>
+   <z-m>-0.16</z-m>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/Instruments-3d/kns80/kns80.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.10</y-m>
+   <z-m>-0.16</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/fuel/fuel-qty0.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>-0.08</y-m>
+   <z-m>-0.24</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/fuel/LHfuelflow.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.24</z-m>
+  </offsets>
+ </model>
+<!--
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/instrument/name.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.08</y-m>
+   <z-m>-0.24</z-m>
+  </offsets>
+ </model>
+-->
+<model>
+  <path>Aircraft/dc3/Models/Instruments3d/rpm/rpm-gauge.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>-0.08</y-m>
+   <z-m>-0.32</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/mp/mp.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.32</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/oil/oilp.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.08</y-m>
+   <z-m>-0.32</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/dc3/Models/Instruments3d/asi/asi.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.45</y-m>
+   <z-m>-0.12</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/ai/ai.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.35</y-m>
+   <z-m>-0.10</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/alt/alt.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.25</y-m>
+   <z-m>-0.12</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/turn/turn-gauge.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.45</y-m>
+   <z-m>-0.22</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Instruments-3d/ki206/ki206.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.35</y-m>
+   <z-m>-0.20</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/clock/clock.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.35</y-m>
+   <z-m>-0.29</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/Instruments3d/vsi/vsi-3d.xml</path>
+  <offsets>
+   <x-m>-0.53</x-m>
+   <y-m>0.25</y-m>
    <z-m>-0.22</z-m>
   </offsets>
  </model>
 
  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>Magneto1</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>/controls/engines/engine[0]/magnetos</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
   <type>rotate</type>
-  <object-name>IgnitionHandle.1</object-name>
+  <object-name>Magneto1</object-name>
   <property>/controls/engines/engine[0]/magnetos</property>
   <interpolation>
    <entry>
@@ -90,7 +266,512 @@
    <z>0</z>
   </axis>
  </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>Magneto2</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>/controls/engines/engine[1]/magnetos</property>
+   </binding>
+  </action>
+ </animation>
+ 
+  <animation>
+  <type>rotate</type>
+  <object-name>Magneto2</object-name>
+  <property>/controls/engines/engine[1]/magnetos</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>80</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>55</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>25</dep>
+   </entry>
+   <entry>
+    <ind>3</ind>
+    <dep>0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.566364</x-m>
+   <y-m>0.026085</y-m>
+   <z-m>0.292386</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0.3</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>master</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/switches/master</property>
+   </binding>
+  </action>
+ </animation>
 
+ <animation>
+  <type>rotate</type>
+  <object-name>master</object-name>
+  <property>controls/switches/master</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>-0.52</x-m>
+   <y-m>0</y-m>
+   <z-m>0.34</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>starterleft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine/starter</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>starterleft</object-name>
+  <property>controls/engines/engine/starter</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ <center>
+   <x-m>-0.55</x-m>
+   <y-m>-0.14</y-m>
+   <z-m>0.28</z-m>
+  </center>
+ </animation>
+  
+     <animation>
+        <type>pick</type>
+        <object-name>StarterSwitchLeft</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/engines/engine/starter</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine/starter</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>starterright</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[1]/starter</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>starterright</object-name>
+  <property>controls/engines/engine[1]/starter</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ <center>
+   <x-m>-0.55</x-m>
+   <y-m>0.14</y-m>
+   <z-m>0.28</z-m>
+  </center>
+ </animation>
+ 
+  <animation>
+        <type>pick</type>
+        <object-name>StarterSwitchRight</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/engines/engine[1]/starter</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/engines/engine[1]/starter</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+   <animation>
+        <type>pick</type>
+        <object-name>BatterySwitch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/electric/battery-switch</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/electric/battery-switch</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+<animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>battery</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/electric/battery-switch</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>battery</object-name>
+  <property>controls/electric/battery-switch</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ <center>
+   <x-m>-0.47</x-m>
+   <y-m>-0.08</y-m>
+   <z-m>0.36</z-m>
+  </center>
+ </animation>
+ 
+  <animation>
+        <type>pick</type>
+        <object-name>AvionicsSwitch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/electric/avionics-switch</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/electric/avionics-switch</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>avionics</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/electric/avionics-switch</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>avionics</object-name>
+  <property>controls/electric/avionics-switch</property>
+   <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ <center>
+   <x-m>-0.42</x-m>
+   <y-m>-0.16</y-m>
+   <z-m>0.37</z-m>
+  </center>
+ </animation>
+ 
+   <animation>
+        <type>pick</type>
+        <object-name>InstrumentLightSwitch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/lighting/instrument-lights</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/lighting/instrument-lights</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>InstrumentLight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/lighting/instrument-lights</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>InstrumentLight</object-name>
+  <property>controls/lighting/instrument-lights</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>-0.36</x-m>
+   <y-m>-0.24</y-m>
+   <z-m>0.37</z-m>
+  </center>
+ </animation>
+
+  <animation>
+        <type>pick</type>
+        <object-name>LandLightSwitch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/lighting/landing-lights</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/lighting/landing-lights</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>LandLight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/lighting/landing-lights</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LandLight</object-name>
+  <property>controls/lighting/landing-lights</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>-0.30</x-m>
+   <y-m>-0.33</y-m>
+   <z-m>0.37</z-m>
+  </center>
+ </animation>
+ 
+  <animation>
+        <type>pick</type>
+        <object-name>NavLightSwitch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/lighting/nav-lights</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/lighting/nav-lights</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+        </action>
+    </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>NavLight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/lighting/nav-lights</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NavLight</object-name>
+  <property>controls/lighting/nav-lights</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>-0.25</x-m>
+   <y-m>-0.41</y-m>
+   <z-m>0.36</z-m>
+  </center>
+ </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>FeatherLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine/propeller-feather</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FeatherLeft</object-name>
+  <property>controls/engines/engine/propeller-feather</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>FeatherRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[1]/propeller-feather</property>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FeatherRight</object-name>
+  <property>controls/engines/engine[1]/propeller-feather</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+ 
  <animation>
   <type>rotate</type>
   <object-name>GearLever</object-name>
@@ -117,6 +798,20 @@
   </axis>
  </animation>
 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>GearLever</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>/gear/gear[0]/position-norm</property>
+   </binding>
+  </action>
+ </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>FlapsLever</object-name>
@@ -141,6 +836,20 @@
    <y>1</y>
    <z>0</z>
   </axis>
+ </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>FlapsLever</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>/surface-positions/flap-pos-norm</property>
+   </binding>
+  </action>
  </animation>
 
 </PropertyList>

@@ -39,6 +39,66 @@
   </axis>
  </animation>
 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>PropUpLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/propeller-pitch</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+       
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>PropUpRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/propeller-pitch</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>PropDnLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>PropDnRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>Throttle.1</object-name>
@@ -73,6 +133,66 @@
    <y>-1</y>
    <z>0</z>
   </axis>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ThrottleUpLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/throttle</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+                 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ThrottleUpRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/throttle</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>                 
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ThrottleDnLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/throttle</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ThrottleDnRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/throttle</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
  </animation>
 
 <animation>
@@ -111,9 +231,69 @@
   </axis>
  </animation>
 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>MixtureUpLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/mixture</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>
+       
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>MixtureUpRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/mixture</property>
+     <step type="double">0.05</step>
+   </binding>          
+  </action>
+ </animation>       
+                                    
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>MixtureDnLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/mixture</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>MixtureDnRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/mixture</property>
+     <step type="double">-0.05</step>
+   </binding>          
+  </action>
+ </animation>
+
 <animation>
   <type>rotate</type>
-  <object-name>TrimElevation</object-name>
+  <object-name>TrimWheelElevation</object-name>
   <property>/controls/flight/elevator-trim</property>
   <factor>255</factor>
   <center>
@@ -128,11 +308,40 @@
   </axis>
  </animation>
 
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ElevationTrimDown</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/elevator-trim</property>
+    <step type="double">0.05</step>
+   </binding>
+  </action>
+ </animation>
+
+  <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ElevationTrimUp</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/elevator-trim</property>
+    <step type="double">-0.05</step>
+   </binding>
+  </action>
+ </animation>
 
 <animation>
   <type>rotate</type>
   <object-name>TrimLeverRudder</object-name>
-  <property>/controls/flight/elevator-trim</property>
+  <property>/controls/flight/rudder-trim</property>
   <factor>1000</factor>
   <center>
    <x-m>0.002737</x-m>
@@ -146,39 +355,40 @@
   </axis>
  </animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>TrimLeverAileron</object-name>
-  <property>/controls/flight/elevator-trim</property>
-  <factor>1000</factor>
-  <center>
-   <x-m>0.002737</x-m>
-   <y-m>0.093053</y-m>
-   <z-m>-0.070473</z-m>
-  </center>
-  <axis>
-   <x>1</x>
-   <y>0</y>
-   <z>0.15</z>
-  </axis>
+  <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>RudderTrimLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/rudder-trim</property>
+    <step type="double">-0.05</step>
+   </binding>
+  </action>
  </animation>
- 
+
  <animation>
-  <type>translate</type>
-  <object-name>ParkingBrake</object-name>
-  <property>/controls/gear/brake-parking[0]</property>
-  <factor>0.025</factor>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>RudderTrimRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/rudder-trim</property>
+    <step type="double">0.05</step>
+   </binding>
+  </action>
  </animation>
 
  <animation>
   <type>rotate</type>
   <object-name>TrimRudderNeedle</object-name>
-  <property>/controls/flight/elevator-trim</property>
+  <property>/controls/flight/rudder-trim</property>
   <interpolation>
    <entry>
     <ind>-1.0</ind>
@@ -204,6 +414,78 @@
    <z>0.15</z>
   </axis>
  </animation>
-
+ 
+<animation>
+  <type>rotate</type>
+  <object-name>TrimLeverAileron</object-name>
+  <property>/controls/flight/aileron-trim</property>
+  <factor>1000</factor>
+  <center>
+   <x-m>0.002737</x-m>
+   <y-m>0.093053</y-m>
+   <z-m>-0.070473</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0.15</z>
+  </axis>
+ </animation>
+ 
+  <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>AileronTrimLeft</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/aileron-trim</property>
+    <step type="double">-0.05</step>
+   </binding>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>false</visible>
+  <object-name>AileronTrimRight</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-adjust</command>
+    <property>/controls/flight/aileron-trim</property>
+    <step type="double">0.05</step>
+   </binding>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>ParkingBrake</object-name>
+  <property>/controls/gear/brake-parking[0]</property>
+  <factor>0.025</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>ParkingBrake</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>/controls/gear/brake-parking[0]</property>
+   </binding>
+  </action>
+ </animation>
 
 </PropertyList>

@@ -3,70 +3,6 @@
 <PropertyList>
 
  <path>dc3-dpm.ac</path>
- 
-<!-- Livery System -->
-    <nasal>
-        <load>
-            var livery_update = aircraft.livery_update.new("Aircraft/dc3/Models/Liveries", 10);
-        </load>
-
-        <unload>
-            livery_update.stop();
-        </unload>
-    </nasal>
- 
-     <animation>
-        <type>material</type>
-         <object-name>Fuselage</object-name>
-         <object-name>VerticalTail</object-name>
-         <object-name>Rudder</object-name>
-         <object-name>RightNacelle</object-name>
-         <object-name>LeftNacelle</object-name>
-         <object-name>LeftWheel</object-name>
-         <object-name>RightWheel</object-name>
-         <object-name>RightStrut</object-name>
-         <object-name>LeftStrut</object-name>
-         <object-name>TailWheel</object-name>
-         <object-name>RightPropeller</object-name>
-         <object-name>LeftPropeller</object-name>
-         <property-base>sim/model/livery</property-base>
-         <texture-prop>texture</texture-prop>
-      <texture>dc3-01.rgb</texture>
-    </animation>
-      
-      <animation>
-        <type>material</type>
-         <object-name>LeftHorizontalTail</object-name>
-         <object-name>RightHorizontalTail</object-name>
-         <object-name>RightElevator</object-name>
-         <object-name>LeftElevator</object-name>
-         <object-name>RightWing</object-name>
-         <object-name>LeftWing</object-name>
-         <object-name>RightOuterFlap</object-name>
-         <object-name>LeftOuterFlap</object-name>
-         <object-name>LeftInnerFlap</object-name>
-         <object-name>RightInnerFlap</object-name>
-         <object-name>RightAileron</object-name>
-         <object-name>LeftAileron</object-name>         
-        <property-base>sim/model/wings</property-base>
-        <texture-prop>texture</texture-prop>
-        <texture>dc3-02.rgb</texture>
-    </animation>    
-     
-      <animation>
-        <type>material</type>
-         <object-name>RightPropeller.Fast</object-name>
-         <object-name>LeftPropeller.Fast</object-name>
-        <property-base>sim/model/propeller</property-base>
-        <texture-prop>texture</texture-prop>
-        <texture>dc3-03.rgb</texture>
-    </animation>      
-     
-<!-- Livery System -->
-
- 
- 
- 
 <!--
 <panel>
   <path>Aircraft/dc3/Models/dc3-2d-panel.xml</path>
@@ -85,10 +21,9 @@
    <y-m>-0.695</y-m>
    <z-m>-0.10</z-m>
   </top-left>
- </panel>
-  -->
+ </panel>-->
 
-<!-- start cockpit models -->
+<!-- start cockpit models-->
 
  <model>
   <path>Aircraft/dc3/Models/dc3-cockpit.xml</path>
@@ -147,11 +82,11 @@
 
 
 
-<!-- end cockpit models -->
+<!-- end cockpit models-->
 
 <!-- start lights-->
 
-<!-- switch navlights on -->
+<!-- switch navlights on-->
  <animation>
   <type>select</type>
   <object-name>LeftNavLightOn</object-name>
@@ -161,7 +96,7 @@
   </condition>
  </animation>
 
-<!-- switch navlights off -->
+<!-- switch navlights off-->
  <animation>
   <type>select</type>
   <object-name>LeftNavLightOff</object-name>
@@ -189,7 +124,7 @@
   </condition>
  </animation>
 
-<!-- end lights -->
+<!-- end lights-->
 
 
   <animation>
