@@ -21,6 +21,17 @@ Revised Februari 2010 Dick Maurer
   <aero>dc3</aero>
   <fuel-fraction>1.0</fuel-fraction>
 
+  <tags>
+      <tag>transport</tag>
+      <tag>douglas</tag>
+      <tag>piston</tag>
+      <tag>radial</tag>
+      <tag>retractable-gear</tag>
+      <tag>tail-dragger</tag>
+      <tag>twin-engine</tag>
+      <tag>ww2</tag>
+  </tags>
+  
   <sound>
    <path>Aircraft/dc3/dc3-sound.xml</path>
   </sound>
