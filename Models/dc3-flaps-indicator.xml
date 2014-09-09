@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>dc3-flaps-indicator.ac</path>
+
+<!--<animation>
+  <type>select</type>
+  <object-name>rect</object-name>
+  <condition>
+   <greater-than>
+    <property>/controls/flight/flaps</property>
+    <value>0.3</value>
+   </greater-than>
+  </condition>
+
+ </animation>-->
+
+ <animation>
+  <type>translate</type>
+  <property>/surface-positions/flap-pos-norm</property>
+  <object-name>one</object-name>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0.2</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+
+ </animation>
+
+
+
+</PropertyList>

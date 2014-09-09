@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Varig</name>
+            <texture>VARIG-01.rgb</texture>
+        </livery>
+        <propeller>
+            <name type="string">Trans Canada</name>
+            <texture>dc3-03.rgb</texture>
+        </propeller>      
+        <wings>
+            <name type="string">Trans Canada</name>
+            <texture>dc3-02.rgb</texture>
+        </wings>           
+    </model>
+</sim>
+</PropertyList>

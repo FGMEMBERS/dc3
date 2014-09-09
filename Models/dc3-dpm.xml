@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>dc3-dpm.ac</path>
+<!--
+<panel>
+  <path>Aircraft/dc3/Models/dc3-2d-panel.xml</path>
+  <bottom-left>
+   <x-m>-1.94</x-m>
+   <y-m>-0.695</y-m>
+   <z-m>-0.60</z-m>
+  </bottom-left>
+  <bottom-right>
+   <x-m>-1.94</x-m>
+   <y-m> 0.1</y-m>
+   <z-m>-0.60</z-m>
+  </bottom-right>
+  <top-left>
+   <x-m>-1.94</x-m>
+   <y-m>-0.695</y-m>
+   <z-m>-0.10</z-m>
+  </top-left>
+ </panel>-->
+
+<!-- start cockpit models-->
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-cockpit.xml</path>
+  <offsets>
+   <x-m>-1.41703</x-m>
+   <y-m>-0.001</y-m>
+   <z-m>-0.0947042</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-throttle.xml</path>
+  <offsets>
+   <x-m>-1.76</x-m>
+   <y-m>0.00</y-m>
+   <z-m>-0.578</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pilot-seat.xml</path>
+  <offsets>
+   <x-m>-1.32</x-m>
+   <y-m>-0.4</y-m>
+   <z-m>-0.435</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pilot-seat.xml</path>
+  <offsets>
+   <x-m>-1.32</x-m>
+   <y-m>0.4</y-m>
+   <z-m>-0.435</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pedals.xml</path>
+  <offsets>
+   <x-m>-1.995</x-m>
+   <y-m>-0.3699</y-m>
+   <z-m>-0.695</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/dc3/Models/dc3-pedals.xml</path>
+  <offsets>
+   <x-m>-1.995</x-m>
+   <y-m>0.3699</y-m>
+   <z-m>-0.695</z-m>
+  </offsets>
+ </model>
+
+
+
+
+<!-- end cockpit models-->
+
+<!-- start lights-->
+
+<!-- switch navlights on-->
+ <animation>
+  <type>select</type>
+  <object-name>LeftNavLightOn</object-name>
+  <object-name>RightNavLightOn</object-name>
+  <condition>
+    <property>/controls/lighting/nav-lights</property>
+  </condition>
+ </animation>
+
+<!-- switch navlights off-->
+ <animation>
+  <type>select</type>
+  <object-name>LeftNavLightOff</object-name>
+  <object-name>RightNavLightOff</object-name>
+  <condition>
+   <not>
+    <property>/controls/lighting/nav-lights</property>
+   </not>
+  </condition>
+ </animation>
+
+ <animation>
+  <name>BeaconFlasher</name>
+  <type>timed</type>
+  <object-name>BeaconOff</object-name>
+  <object-name>BeaconOn</object-name>
+  <duration-sec>1.0</duration-sec>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>BeaconOn</object-name>
+  <condition>
+   <property>/controls/lighting/beacon</property>
+  </condition>
+ </animation>
+
+<!-- end lights-->
+
+
+  <animation>
+  <type>select</type>
+  <object-name>LeftPropeller.Fast</object-name>
+  <condition>
+   <greater-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>500</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>LeftPropeller</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>500</value>
+   </less-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>LeftPropeller</object-name>
+  <property>engines/engine[0]/rpm</property>
+  <center>
+   <x-m>0</x-m>
+   <y-m>-2.9</y-m>
+   <z-m>-1.50</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RightPropeller.Fast</object-name>
+  <condition>
+   <greater-than>
+    <property>engines/engine[1]/rpm</property>
+    <value>500</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>RightPropeller</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[1]/rpm</property>
+    <value>500</value>
+   </less-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>RightPropeller</object-name>
+  <property>engines/engine[1]/rpm</property>
+  <center>
+   <x-m>0</x-m>
+   <y-m>2.9</y-m>
+   <z-m>-1.55</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftWheel</object-name>
+  <object-name>LeftStrut</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <offset-deg>35</offset-deg>
+  <factor>-35</factor>
+  <center>
+   <x-m>3.8</x-m>
+   <y-m>-2.9</y-m>
+   <z-m>-1.8</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftStrut</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <offset-deg>35</offset-deg>
+  <factor>-35</factor>
+  <center>
+   <x-m>2.05</x-m>
+   <y-m>-2.9</y-m>
+   <z-m>-3.25</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightWheel</object-name>
+  <object-name>RightStrut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <offset-deg>35</offset-deg>
+  <factor>-35</factor>
+  <center>
+   <x-m>3.8</x-m>
+   <y-m>2.9</y-m>
+   <z-m>-1.8</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightStrut</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <offset-deg>35</offset-deg>
+  <factor>-35</factor>
+  <center>
+   <x-m>2.05</x-m>
+   <y-m>2.9</y-m>
+   <z-m>-3.25</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Rudder</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>25</factor>
+  <center>
+   <x-m>14.6</x-m>
+   <y-m>0</y-m>
+   <z-m>2</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftElevator</object-name>
+  <object-name>RightElevator</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <factor>15</factor>
+  <center>
+   <x-m>15.2</x-m>
+   <y-m>0</y-m>
+   <z-m>0.45</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftInnerFlap</object-name>
+  <object-name>RightInnerFlap</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.7</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftOuterFlap</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.7</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>-0.035</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightOuterFlap</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0</y-m>
+   <z-m>-1.7</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0.035</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftAileron</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>-30</factor>
+  <center>
+   <x-m>5.2</x-m>
+   <y-m>-10</y-m>
+   <z-m>-1.25</z-m>
+  </center>
+  <axis>
+   <x>0.06</x>
+   <y>-1.0</y>
+   <z>0.06</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightAileron</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>5.1</x-m>
+   <y-m>10</y-m>
+   <z-m>-1.2</z-m>
+  </center>
+  <axis>
+   <x>0.06</x>
+   <y>1.0</y>
+   <z>0.06</z>
+  </axis>
+ </animation>
+
+<!-- Shadow Map -->
+<!-- pitch -->
+ <animation>
+  <type>rotate</type>
+  <object-name>ShadowMap</object-name>
+  <property>orientation/pitch-deg</property>
+  <factor>-1.0</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- roll -->
+ <animation>
+  <type>rotate</type>
+  <object-name>ShadowMap</object-name>
+  <property>orientation/roll-deg</property>
+  <factor>1.0</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<!-- Translate to ground level -->
+ <animation>
+  <type>translate</type>
+  <object-name>ShadowMap</object-name>
+  <property>position/altitude-agl-ft</property>
+  <factor>-0.3</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+</PropertyList>
